@@ -45,9 +45,9 @@ public class UpdateAccessKey {
 	
 	public static void updateKey(IamClient iam, String username, String accessId, String status) {
 		try {
-			if (status.toLowerCase().equalsIgnoreCase("active")) {
+			if (status.equalsIgnoreCase("active")) {
 				statusType = StatusType.ACTIVE;
-			} else if (status.toLowerCase().equalsIgnoreCase("inactive")) {
+			} else if (status.equalsIgnoreCase("inactive")) {
 				statusType = StatusType.INACTIVE;
 			} else {
 				statusType = StatusType.UNKNOWN_TO_SDK_VERSION;
