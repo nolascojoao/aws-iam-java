@@ -46,6 +46,7 @@ public class ListAccessKeys {
 			while (!done) {
 				ListAccessKeysResponse response;
 				
+				// Check if this is the first request or a subsequent one with a marker
 				if (newMarker == null) {
 					ListAccessKeysRequest request = ListAccessKeysRequest.builder()
 							.userName(user)
@@ -54,7 +55,7 @@ public class ListAccessKeys {
 				} else {
 					ListAccessKeysRequest request = ListAccessKeysRequest.builder()
 							.userName(user)
-							.marker(newMarker)
+							.marker(newMarker) // Continue listing from the marker
 							.build();
 					response = iam.listAccessKeys(request);
 				}
@@ -63,10 +64,11 @@ public class ListAccessKeys {
 					System.out.println(String.format("Retrieved Access Key ID: %s", metadata.accessKeyId()));
 				}
 				
+				// Check if the response is truncated (more results available)
 				if (!response.isTruncated()) {
-					done = true;
+					done = true; // No more results, finish the loop
 				} else {
-					newMarker = response.marker();
+					newMarker = response.marker(); // Get the marker for the next request
 				}
 			}
 			
