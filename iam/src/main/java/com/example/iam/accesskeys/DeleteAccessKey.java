@@ -1,4 +1,4 @@
-package com.example.iam;
+package com.example.iam.accesskeys;
 
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
