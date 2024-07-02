@@ -17,5 +17,15 @@
 			<artifactId>iam</artifactId>
 			<version>2.26.3</version>
 		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>iam-policy-builder</artifactId>
+			<version>2.26.13</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sts</artifactId>
+			<version>2.26.13</version>
+		</dependency>
 	</dependencies>
 </project>
