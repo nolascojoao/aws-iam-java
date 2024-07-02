@@ -2,6 +2,7 @@ Code examples demonstrating how to interact with AWS Identity and Access Managem
 
 #### IAM service functions
 
+- [IAM Policy Builder API examples](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/policies/IamPolicyBuilderExamples.java) (`IamPolicyBuilderExamples`)
 - [Attach a policy to a role](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/policies/AttachRolePolicy.java) (`AttachRolePolicy`)
 - [Create a policy](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/policies/CreatePolicy.java) (`CreatePolicy`)
 - [Create a user](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/users/CreateUser.java) (`CreateUser`)
@@ -10,8 +11,10 @@ Code examples demonstrating how to interact with AWS Identity and Access Managem
 - [Delete a user](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/users/DeleteUser.java) (`DeleteUser`)
 - [Delete an access key](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/accesskeys/DeleteAccessKey.java) (`DeleteAccessKey`)
 - [Detach a policy from a role](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/policies/DetachRolePolicy.java) (`DetachRolePolicy`)
+- [Get a policy](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/policies/GetPolicy.java) (`GetPolicy`)
 - [List a user's access keys](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/accesskeys/ListAccessKeys.java) (`ListAccessKeys`)
 - [List users](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/users/ListUsers.java) (`ListUsers`)
+- [Retrieve an access key’s last used time](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/accesskeys/AccessKeyLastUsed.java) (`AccessKeyLastUsed`)
 - [Update a user](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/users/UpdateUser.java) (`UpdateUser`)
 - [Update an access key](https://github.com/nolascojoao/aws-iam-java/blob/main/iam/src/main/java/com/example/iam/accesskeys/UpdateAccessKey.java) (`UpdateAccessKey`)
 
